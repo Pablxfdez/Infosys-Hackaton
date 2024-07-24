@@ -1,6 +1,6 @@
-const Dashboard=()=>{
+const Dashboard=({ activeTab, setActiveTab })=>{
     return (
-        <h1>Dashboard </h1>
+        
     )
 }
 export default Dashboard;

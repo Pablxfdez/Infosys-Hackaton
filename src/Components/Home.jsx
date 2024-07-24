@@ -1,12 +1,14 @@
+import { useState } from "react";
 import Dashboard from "./Dashboard";
 import SideLeftBar from "./SideBar";
-import Figgen from "./Figgen";
+
 const Home=()=>{
+    const [activeTab, setActiveTab] = useState('overview');
     return (
         <div className="flex">
-            <SideLeftBar></SideLeftBar>
-            <Dashboard></Dashboard>
-            <Figgen></Figgen>
+            <SideLeftBar activeTab={activeTab} setActiveTab={setActiveTab} />
+            <Dashboard activeTab={activeTab} setActiveTab={setActiveTab}></Dashboard>
+
         </div>
      
     )

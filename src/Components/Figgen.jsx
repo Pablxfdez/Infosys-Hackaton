@@ -1,49 +1,7 @@
 import React, { useState } from 'react';
-
+import Sidebar from './Sidebar';
 function Figgen() {
   const [activeTab, setActiveTab] = useState('overview');
-
-  const tabs = [
-    {
-      id: 'overview',
-      title: 'Overview',
-      icon: 'grid',
-    },
-    {
-      id: 'projects',
-      title: 'Projects',
-      icon: 'folder',
-    },
-    {
-      id: 'transactions',
-      title: 'Transactions',
-      icon: 'exchange',
-    },
-    {
-      id: 'bills',
-      title: 'Bills',
-      icon: 'receipt',
-    },
-    {
-      id: 'expenses',
-      title: 'Expenses',
-      icon: 'wallet',
-    },
-    {
-      id: 'goals',
-      title: 'Goals',
-      icon: 'clock',
-    },
-    {
-      id: 'settings',
-      title: 'Settings',
-      icon: 'settings',
-    },
-  ];
-
-  const handleClick = (tabId) => {
-    setActiveTab(tabId);
-  };
 
   return (
     <div className="flex h-screen">
@@ -431,6 +389,5 @@ function Figgen() {
       </div>
     </div>
   );
-}
-
+  }
 export default Figgen;
