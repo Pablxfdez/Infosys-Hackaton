@@ -1,3 +1,4 @@
+import React from "react";
 const Dashboard=({ activeTab, setActiveTab })=>{
     return (
        <div></div> 

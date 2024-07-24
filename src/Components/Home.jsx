@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Dashboard from "./Dashboard";
 import SideLeftBar from "./SideBar";
+import React from "react";
 
 const Home=()=>{
     const [activeTab, setActiveTab] = useState('overview');
