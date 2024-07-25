@@ -15,6 +15,7 @@ function Transactions() {
             <th className="py-2 px-4 border-b">Location</th>
             <th className="py-2 px-4 border-b">Remarks</th>
             <th className="py-2 px-4 border-b">Risk Percentage</th>
+            <th className="py-2 px-4 border-b">Info</th>
           </tr>
         </thead>
         <tbody>
@@ -28,6 +29,7 @@ function Transactions() {
             <td className="py-2 px-4 border-b">New York</td>
             <td className="py-2 px-4 border-b">Accepted</td>
             <td className="py-2 px-4 border-b">12.5%</td>
+            <td className="py-2 px-4 border-b"><button className="border-2 border-blue-500 py-1 px-2 rounded">Info</button></td>
           </tr>
           <tr>
             <td className="py-2 px-4 border-b">2024-01-02</td>
@@ -39,6 +41,7 @@ function Transactions() {
             <td className="py-2 px-4 border-b">Los Angeles</td>
             <td className="py-2 px-4 border-b">Verification required</td>
             <td className="py-2 px-4 border-b">63.6%</td>
+            <td className="py-2 px-4 border-b"><button className="border-2 border-blue-500 py-1 px-2 rounded">Info</button></td>
           </tr>
           <tr>
             <td className="py-2 px-4 border-b">2024-01-03</td>
@@ -50,6 +53,7 @@ function Transactions() {
             <td className="py-2 px-4 border-b">Chicago</td>
             <td className="py-2 px-4 border-b">Fraudulent</td>
             <td className="py-2 px-4 border-b">81.2%</td>
+            <td className="py-2 px-4 border-b"><button className="border-2 border-blue-500 py-1 px-2 rounded">Info</button></td>
           </tr>
           <tr>
             <td className="py-2 px-4 border-b">2024-01-04</td>
@@ -61,6 +65,7 @@ function Transactions() {
             <td className="py-2 px-4 border-b">Houston</td>
             <td className="py-2 px-4 border-b">Accepted</td>
             <td className="py-2 px-4 border-b">28.3%</td>
+            <td className="py-2 px-4 border-b"><button className="border-2 border-blue-500 py-1 px-2 rounded">Info</button></td>
           </tr>
           <tr>
             <td className="py-2 px-4 border-b">2024-01-01</td>
@@ -72,6 +77,7 @@ function Transactions() {
             <td className="py-2 px-4 border-b">New York</td>
             <td className="py-2 px-4 border-b">Fraudulent</td>
             <td className="py-2 px-4 border-b">89.3%</td>
+            <td className="py-2 px-4 border-b"><button className="border-2 border-blue-500 py-1 px-2 rounded">Info</button></td>
           </tr>
         </tbody>
       </table>
