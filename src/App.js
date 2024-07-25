@@ -12,10 +12,10 @@ import Bills from './Components/pages/Bills';
 import Expenses from './Components/pages/Expenses';
 import Goals from './Components/pages/Goals';
 import Settings from './Components/pages/Settings';
-import NotFound from './Components/NotFound'; // Add a NotFound component
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
+  const [loading, setLoading] = useState(false); // State to control loading screen
 
   return (
     <Router>
@@ -24,17 +24,20 @@ function App() {
         <div className="flex">
           <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
           <div className="content flex-1 p-6">
+            {loading && (
+              <div className="loading-overlay">
+                <div className="loader"></div>
+              </div>
+            )}
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/overview" element={<Overview />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/transactions" element={<Transactions />} />
-              <Route path="/bills" element={<Bills />} />
-              <Route path="/expenses" element={<Expenses />} />
-              <Route path="/goals" element={<Goals />} />
-              <Route path="/settings" element={<Settings />} />
-              {/* Add a route to handle unmatched paths */}
-              <Route path="*" element={<NotFound />} />  
+              <Route path="/" element={<Home setLoading={setLoading} />} />
+              <Route path="/overview" element={<Overview setLoading={setLoading} />} />
+              <Route path="/projects" element={<Projects setLoading={setLoading} />} />
+              <Route path="/transactions" element={<Transactions setLoading={setLoading} />} />
+              <Route path="/bills" element={<Bills setLoading={setLoading} />} />
+              <Route path="/expenses" element={<Expenses setLoading={setLoading} />} />
+              <Route path="/goals" element={<Goals setLoading={setLoading} />} />
+              <Route path="/settings" element={<Settings setLoading={setLoading} />} />
             </Routes>
           </div>
         </div>

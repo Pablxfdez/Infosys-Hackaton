@@ -1,0 +1,48 @@
+/* App.css */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the app takes the full height of the viewport */
+  }
+  
+  .content {
+    flex: 1; /* Ensure the content area takes up available space */
+    position: relative; /* Position relative for absolute positioning of the loader */
+  }
+  
+  .loading-overlay {
+    position: fixed; /* Fixed positioning to ensure it's always visible */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure loader is on top of all content */
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3; /* Light grey background */
+    border-top: 8px solid #3498db; /* Blue color for spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Ensure the footer is styled correctly */
+  .footer {
+    background-color: #333; /* Dark background color */
+    color: #f1f1f1; /* Light text color */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensure it stays at the bottom of the page */
+  }
+  
