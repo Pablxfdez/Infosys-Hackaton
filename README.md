@@ -1,3 +1,7 @@
+PLEASE READ! The frontend is on the dev branch. You will have to open the branch as upstream to be able to view it and run it. You can do this by opening the repo, checking out to the dev branch, and then in the bottom left of your screen where you see branch or tag checkout, click on dev and you will be able to see the entirety of the frontend!
+
+Our AI model is on the main branch, all you need to do is clone and then git pull and you should have access to it!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
