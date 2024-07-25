@@ -1,0 +1,27 @@
+.pie-chart-container {
+    position: relative;
+    height: 150px; /* Adjust height to make the chart smaller */
+    width: 150px; /* Adjust width to make the chart smaller */
+    margin: 0 auto; /* Center the chart */
+  }
+  
+  .pie-chart-container canvas {
+    height: 30% !important; /* Ensure the chart fits the container */
+    width: 30% !important;  /* Ensure the chart fits the container */
+  }
+  
+  .pie-chart-legend {
+    margin-top: 1rem;
+    text-align: center; /* Center align the legend */
+  }
+  
+  .pie-chart-legend ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pie-chart-legend li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem; /* Adjust font size if needed */
+  }
+  
