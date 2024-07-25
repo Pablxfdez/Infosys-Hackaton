@@ -12,16 +12,16 @@ function Sidebar({ activeTab, setActiveTab }) {
     { id: 'settings', title: 'Settings', icon: 'settings' },
   ];
 
-  const handleClick = (tabId) => {
-    setActiveTab(tabId);
-  };
-
   return (
     <div className="sidebar bg-gray-800 w-64 p-6 text-white h-full flex flex-col">
       <ul className="flex-1">
         {tabs.map((tab) => (
           <li key={tab.id} className={`cursor-pointer p-4 mb-2 rounded-md hover:bg-gray-700 ${activeTab === tab.id ? 'bg-gray-700' : ''}`}>
-            <Link to={`/${tab.id}`} className="flex items-center" onClick={() => setActiveTab(tab.id)}>
+            <Link 
+              to={`/${tab.id}`} 
+              className="flex items-center"
+              onClick={() => setActiveTab(tab.id)}
+            >
               <span className={`icon-${tab.icon} text-xl`}></span>
               <span className="ml-3 text-lg">{tab.title}</span>
             </Link>

@@ -1,15 +1,22 @@
-import React from "react";
-const headerStyle = {
-    border: '2px solid black',         // Border style
-    paddingTop: '20px',                // Padding inside the box
-    paddingBottom: '10%',
-    borderRadius: '5px',              // Rounded corners (optional)
-    textAlign: 'center',              // Center the text (optional)
-    backgroundColor: '#f0f0g9',       // Light grey fill color
-};
-const Footer=()=>{
-    return (
-        <h1 style={headerStyle}>Footer </h1>
-    )
+// Footer.jsx
+import React from 'react';
+import './Footer.css';
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div className="footer-copyright">
+          &copy; 2024 InSync. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
 }
+
 export default Footer;

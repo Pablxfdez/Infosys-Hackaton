@@ -1,16 +1,13 @@
-const Header = () => {
-    const headerStyle = {
-        border: '2px solid black',         // Border style
-        paddingTop: '20px',                // Padding inside the box
-        paddingBottom: '20px',
-        borderRadius: '5px',              // Rounded corners (optional)
-        textAlign: 'center',              // Center the text (optional)
-        backgroundColor: '#f0f0g9',       // Light grey fill color
-    };
+// Header.jsx
+import React from 'react';
+import './Header.css'; // Import the CSS for the Header component
 
-    return (
-        <h1 style={headerStyle}>InSync Fraud Detection</h1>
-    );
-};
+function Header() {
+  return (
+    <header className="header">
+      <h1 className="header-title">InSync</h1>
+    </header>
+  );
+}
 
 export default Header;

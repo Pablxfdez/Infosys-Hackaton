@@ -1,0 +1,39 @@
+/* Footer.css */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cecece; /* Dark grey background */
+    color: #f4f4f4; /* Light text color */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    font-family: 'Montserrat', sans-serif; /* Professional font */
+    font-size: 0.875rem; /* Slightly smaller text */
+    font-weight: 400; /* Regular weight */
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #f4f4f4; /* Light text color */
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer-copyright {
+    margin-top: 10px;
+    color: #e0e0e0; /* Lighter grey for footnote text */
+  }
+  

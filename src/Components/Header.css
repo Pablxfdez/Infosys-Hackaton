@@ -1,0 +1,19 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; /* Adjust as needed */
+    background-color: #333; /* Grey background color */
+    color: #f4f4f4; /* Light text color for contrast */
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .header-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: 700; /* Bold text */
+    text-align: center;
+  }
+  
