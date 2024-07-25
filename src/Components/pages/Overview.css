@@ -1,27 +1,45 @@
-.pie-chart-container {
-    position: relative;
-    height: 150px; /* Adjust height to make the chart smaller */
-    width: 150px; /* Adjust width to make the chart smaller */
-    margin: 0 auto; /* Center the chart */
-  }
-  
-  .pie-chart-container canvas {
-    height: 30% !important; /* Ensure the chart fits the container */
-    width: 30% !important;  /* Ensure the chart fits the container */
-  }
-  
-  .pie-chart-legend {
-    margin-top: 1rem;
-    text-align: center; /* Center align the legend */
-  }
-  
-  .pie-chart-legend ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .pie-chart-legend li {
-    margin-bottom: 0.5rem;
-    font-size: 0.875rem; /* Adjust font size if needed */
-  }
-  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pie-chart-wrapper {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.bar-chart-wrapper {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.pie-chart-legend ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pie-chart-legend li {
+  margin: 0 1rem;
+  font-size: 0.875rem;
+}
+
+.grey-pie-chart-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon-text {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: bold;
+}

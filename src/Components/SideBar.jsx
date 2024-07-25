@@ -13,7 +13,7 @@ function Sidebar({ activeTab, setActiveTab }) {
   ];
 
   return (
-    <div className="sidebar bg-gray-800 w-64 p-6 text-white h-full flex flex-col">
+    <div className="sidebar bg-gray-800 w-64 p-6 text-white h-full flex flex-col justify-between">
       <ul className="flex-1">
         {tabs.map((tab) => (
           <li key={tab.id} className={`cursor-pointer p-4 mb-2 rounded-md hover:bg-gray-700 ${activeTab === tab.id ? 'bg-gray-700' : ''}`}>

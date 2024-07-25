@@ -6,20 +6,20 @@ ChartJS.register(Title, Tooltip, Legend, ArcElement);
 
 const PieChart = () => {
   const data = {
-    labels: ['Accepted', 'Rejected', 'Fraudulent'],
+    labels: ['Not Fraudulent', 'Potentially Fraudulent', 'Fraudulent'],
     datasets: [
       {
         label: 'Transaction Status',
-        data: [60, 25, 15], // Example data
+        data: [90.35, 4.72, 100-90.35-4.72], // Example data
         backgroundColor: [
-          'rgba(75, 192, 192, 0.7)', // Accepted
-          'rgba(255, 99, 132, 0.7)', // Rejected
-          'rgba(255, 206, 86, 0.7)'  // Fraudulent
+          'rgba(0, 100, 0, 0.7)', // Accepted
+          'rgba(255, 206, 86, 0.7)', // Rejected
+          'rgba(255, 0, 0, 0.7)'  // Fraudulent
         ],
         borderColor: [
-          'rgba(75, 192, 192, 1)',
-          'rgba(255, 99, 132, 1)',
-          'rgba(255, 206, 86, 1)'
+          'rgba(0, 100, 0, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(255, 0, 0, 1)'
         ],
         borderWidth: 1,
       },
@@ -28,9 +28,10 @@ const PieChart = () => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'bottom',
+        display: false, // Hide the legend as we're using a custom one
       },
       tooltip: {
         callbacks: {

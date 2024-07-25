@@ -21,14 +21,20 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <div className="flex">
+        <div className="flex h-full w-full">
+          <div>
           <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+          </div>
+          <div>
+
           <div className="content flex-1 p-6">
             {loading && (
               <div className="loading-overlay">
                 <div className="loader"></div>
               </div>
             )}
+            <div className="w-full">
+
             <Routes>
               <Route path="/" element={<Home setLoading={setLoading} />} />
               <Route path="/overview" element={<Overview setLoading={setLoading} />} />
@@ -39,8 +45,10 @@ function App() {
               <Route path="/goals" element={<Goals setLoading={setLoading} />} />
               <Route path="/settings" element={<Settings setLoading={setLoading} />} />
             </Routes>
+            </div>
           </div>
         </div>
+      </div>
         <Footer />
       </div>
     </Router>
