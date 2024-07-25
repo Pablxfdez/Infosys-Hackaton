@@ -17,7 +17,7 @@ def load_model():
     return model.to(device), tokenizer, device
 
 def analyze_fraud(model, tokenizer, device, input_text):
-    prompt = f"<s>[INST] Analyze the following conversation and determine if it's fraudulent or legitimate. If it is fraudulent, state which type of fraud and why you know it. Respond with either 'FRAUD' or 'LEGITIMATE' at the start of your explanation. Conversation: {input_text} [/INST]"
+    prompt = f"<s>[INST] Analyze the following conversation and determine if it's fraudulent or legitimate. If it is fraudulent, state 'FRAUD' followed by the type of fraud and your reasoning. If it's legitimate, state 'LEGITIMATE'. Conversation: {input_text} [/INST]"
     
     encodeds = tokenizer(prompt, return_tensors="pt", add_special_tokens=False)
     model_inputs = encodeds.to(device)

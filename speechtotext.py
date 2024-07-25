@@ -25,15 +25,19 @@ def process_audio_for_fraud_detection(audio_file_path):
     
     if transcribed_text is None:
         print("Could not transcribe the audio. Exiting.")
-        return
+
+        prediction, justification = -1, "Could not transcribe the audio. Exiting."
     
     # Step 2: Perform fraud detection on the transcribed text
-    prediction, justification = fraud_detection(transcribed_text)
+    else:
+
+        prediction, justification = fraud_detection(transcribed_text)
     
     # Step 3: Print results
     print(f"\nFraud Detection Results:")
     print(f"Prediction: {'Fraud' if prediction == 1 else 'Not Fraud' if prediction == 0 else 'Unclear'}")
     print(f"Justification: {justification}")
+    return prediction, justification
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
